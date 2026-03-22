@@ -2,36 +2,74 @@
 <html>
 <head>
   <title>Adrino</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial;
-      background-color: #2b1b12;
+      background: linear-gradient(#2b1b12, #1a0f0a);
       color: #f5e6d3;
       text-align: center;
     }
+
     h1 {
-      font-size: 40px;
+      font-size: 42px;
       margin-top: 40px;
       color: gold;
+      letter-spacing: 2px;
     }
+
     .tagline {
       font-size: 18px;
-      margin-bottom: 30px;
+      opacity: 0.8;
+      margin-bottom: 40px;
     }
+
+    .container {
+      padding: 20px;
+    }
+
     .product {
       background: #3a2418;
-      margin: 20px;
+      margin: 20px auto;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 15px;
+      width: 85%;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 20px;
+      margin: 10px 0;
+      color: gold;
+    }
+
     button {
-      padding: 10px 20px;
+      padding: 12px 25px;
       background: gold;
       border: none;
+      border-radius: 5px;
       cursor: pointer;
       font-weight: bold;
     }
+
+    .section-title {
+      margin-top: 40px;
+      font-size: 24px;
+      color: gold;
+    }
+
+    .about, .contact {
+      padding: 20px;
+      opacity: 0.9;
+    }
+
   </style>
 </head>
 
@@ -40,11 +78,37 @@
   <h1>ADRINO</h1>
   <p class="tagline">Made for moments that matter</p>
 
-  <div class="product">
-    <h2>Classic Hamper</h2>
-    <p>₹199</p>
-    <button>DM to Order</button>
+  <div class="container">
+
+    <div class="section-title">Our Hampers</div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300" alt="Hamper">
+      <h2>Classic Hamper</h2>
+      <p class="price">₹199</p>
+      <button onclick="alert('DM us on Instagram to order')">DM to Order</button>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300" alt="Hamper">
+      <h2>Premium Hamper</h2>
+      <p class="price">₹399</p>
+      <button onclick="alert('DM us on Instagram to order')">DM to Order</button>
+    </div>
+
+    <div class="section-title">About Us</div>
+    <div class="about">
+      <p><b>Adrix</b> & <b>Tanmay</b><br>
+      Building Adrino to create premium gifting experiences from scratch.</p>
+    </div>
+
+    <div class="section-title">Contact</div>
+    <div class="contact">
+      <p>Instagram: @adrino.co</p>
+      <p>Phone: 1234567890</p>
+    </div>
+
   </div>
 
 </body>
-  </html>
+        </html>
